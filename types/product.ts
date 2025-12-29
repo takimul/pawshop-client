@@ -8,16 +8,18 @@ export type Product = {
   price: number;
   discountPrice?: number;
 
-  category: "cat" | "dog" | "bird" | "fish" | "other";
+  category: string;
   subCategory?: string;
 
   image: string;
   images?: string[];
 
   stock: number;
-  rating?: number;
+  rating: number;
 
   brand?: string;
+  tags?: string[];
+  discount?: number;
 
   createdAt?: string;
   updatedAt?: string;
